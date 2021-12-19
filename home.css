@@ -1,0 +1,113 @@
+body{
+	color : #FFFFFF;
+	background-image : url('img/7.jpg');
+    transition: background 4s;
+	background-size : 1800px auto;
+    overflow: hidden;
+}
+body:hover{
+	color : #FFFFFF;
+	background-image : url('img/11.jpg');
+    transition: background 4s;
+	background-size : 2000px auto;
+    overflow: hidden;
+}
+.containerMain{
+    color: #FFFFFF;
+	width : 1400px;
+	height : 730px;
+	margin : 10px;
+	padding : 10px;
+	box-sizing : border-box;
+	display : flex;
+    line-height : 1.65;
+}
+.sidebar-kiri{
+	width : 520px;
+	height : 730px;
+}
+.main{
+	width : 2000px;
+	text-align : justify;
+    margin-top : 160px;
+	margin-right : 500px;
+	margin-left : 10px;
+}
+.button1 {
+	display: inline-block;
+    background : #EC4D37;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    width: 200px;
+	height : 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    left: 50%;
+    transform: translate(12%,0%);
+}
+.button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button1:hover span {
+    padding-right: 25px;
+}
+.button1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.button2 {
+	display: inline-block;
+    background : #EC4D37;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    width: 200px;
+	height : 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    left: 50%;
+    transform: translate(12%,0%);
+}
+.button2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button2:hover span {
+    padding-right: 25px;
+}
+.button2:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.social{
+	width : 100px;
+	height : 100px;
+	transform: translate(-25%, 150%);
+}
+.sidebar-kiri ul li {
+    list-style: none;
+}

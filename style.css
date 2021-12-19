@@ -1,0 +1,138 @@
+.body{
+    font-family: 'Courier New', Courier, monospace ;
+    color: #FFFFFF;
+}
+h1{
+    text-align: center;
+    color: #FFFFFF;
+}
+nav{
+    background: #1c1c1c;
+}
+#myVideo {
+    position: fixed;
+    left: 0%;
+    min-width: 100%;
+    min-height: 100%;
+}
+nav{
+    background: #1c1c1c;
+}
+.navbar-brand{
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+}
+.square{
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1c;
+}
+.row1{
+    width: 100%;
+}
+.bmxText{
+    position: absolute;
+    font-size: 19px;
+    top : 140px;
+    width: 500px;
+    left: 50%;
+    color: #FFFFFF;
+    text-align: justify;
+}
+.mountainText{
+    position: absolute;
+    font-size: 19px;
+    top : 640px;
+    width: 500px;
+    left: 50%;
+    color: #FFFFFF;
+    text-align: justify;
+}
+.raceBikeText{
+    position: absolute;
+    font-size: 19px;
+    top : 1140px;
+    width: 500px;
+    left: 50%;
+    color: #FFFFFF;
+    text-align: justify;
+}
+.roadBikeText{
+    position: absolute;
+    font-size: 19px;
+    top : 1640px;
+    width: 500px;
+    left: 50%;
+    color: #FFFFFF;
+    text-align: justify;
+}
+.bike-box{
+    position: relative;
+    border-radius: 25px;
+    height: 470px;
+    width: 470px;
+    color : #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    transform-style: preserve-3d;
+    opacity: 1;
+    left: 5%;
+}
+.bike-box:before{
+    content: 'GO';
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    top :40px;
+    left: -100px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.bike-box:hover::before{
+    left: 50%;
+    transform: translate3d(-50%,0,30px);
+    opacity: 1;     
+}
+.bike-box::after{
+    content: 'EXPRLORATION';
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    top :390px;
+    left: 550px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.bike-box:hover::after{
+    left: 50%;
+    opacity: 1;
+    transform: translate3d(-50%,0,30px);
+}
+.bike-name{
+    text-align: center;
+    font-size: 25px;
+    top: 0px;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translate3d(0,10px,25px);
+}
+.bike-box:hover .bike-name{
+    top: 20px;
+    opacity: 1;
+}
+
+.bike-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,100px);
+    max-width: 390px;
+    transition: 0.5s;
+}
+.bike-box:hover .bike-img{
+    transform: translate(-50%,-50%,100px) rotate(-5deg) scale(1.1);
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>XBIKE</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="home.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src='js/jquery-3.6.0.js'></script>
+		<script>
+		$(document).ready(function(){
+				$("ul").hide();
+		});
+		$(document).ready(function(){
+			$(".button2").click(function(){
+				$("ul").slideToggle(1000);			
+			});
+		});
+		</script>
+		<style>
+			.button1{
+				width: 140px;
+				height: 45px;
+				font-size: 15px;
+				transform: translate(20%,0);
+			}
+			.button2{
+				width: 140px;
+				height: 45px;
+				font-size: 15px;
+				transform: translate(20%,0);
+			}
+			h1{
+				font-size: 80px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="containerMain">
+			<div class="sidebar-kiri">
+				<ul>
+					<li><a href="https://www.instagram.com/"><img src="img/instagram.png" class="social"></a></li>
+					<li><a href="https://www.facebook.com/"><img src="img/facebook.png" class="social"></a></li>
+					<li><a href="https://www.twitter.com/"><img src="img/twitter.png" class="social"></a></li>
+					<li><a href="https://www.youtube.com/"><img src="img/youtube.png" class="social"></a></li>
+				</ul>
+			</div>
+			<div class="main">
+				<h1>EXPERIENCE</h1>
+				<p>Bike Experience is a new way to discover the territory on two wheels. 
+				Nothing revolutionary, but the safe re-appropriate of the sweet discovery… but often, 
+				simple things have the power to transform a gesture into an unforgettable experience, and this, in today’s 
+				frantic world, it may be more than a revolution!
+				Bike Experience is a group of sensible and fitted structures, a number of trendy and reliable bicycles 
+				(but you may use yours!), serious and passionate companions who will let you see and discover with new eyes Verona,
+				Custoza’s lands and the fantastic panoramas on Garda Lake and Mincio river.
+				</p>
+				<button onclick="window.location.href='aboutUs.html';" class="btn button1 btn-danger"><span>About Us</span></button>
+				<button onclick="window.location.href='information.html';" class="btn button1 btn-danger"><span>Explore</span></button>
+				<button onclick="window.location.href='produkUser.php';" class="btn button1 btn-danger"><span>Shopping</span></button>
+				<button class="btn button2 btn-danger"><span>Social</span></button>
+			</div>
+		</div>
+	</body>
+</html>
+		
+	
